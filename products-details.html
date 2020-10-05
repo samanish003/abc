@@ -1,2 +1,200 @@
-hjgfskh,fkshz
-jhsfksjfhs
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name= "viewport" content="width= device-width, initial- scale=1.0">
+	<title>All products Redstore</title>
+	<link rel="stylesheet"  href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+		 <div class="logo">
+			<img src="images/logo.png" width="125px">
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="">Home</a></li>
+				<li><a href="">Product</a></li>
+				<li><a href="">About</a></li>f
+				<li><a href="">Contact</a></li>
+				<li><a href="">AccountS</a></li>	
+			</ul>
+		</nav>
+		<img src="images/cart.png" width="30px"height="30px">
+		<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+	 </div>	
+	 </div>
+
+
+<!----------- single products details----->
+	<div class="small-container single-product">
+		<div class="row">
+	<div class="col-2">		
+			<img src="images/gallery-1.jpg" width= "100%" id="ProductImg">
+			<div  >
+				<img src="images/gallery-1.jpg" width= "100%" class="small-img-row">
+			</div>
+			<div class="small-img-row">
+				<img src="images/gallery-2.jpg" width= "100%" class="small-img-row">
+			</div>
+			<div class="small-img-row">
+				<img src="images/gallery-3.jpg" width= "100%" class="small-img-row">
+			</div>
+			<div class="small-img-row">
+				<img src="images/gallery-4.jpg" width= "100%" class="small-img-row">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+			
+		</div>
+		<div class="col-2">
+			<p>Home / T-shirt</p>
+			<h1>Red Printed T-shirt by HRX</h1>
+			<h4>Rs.699</h4>
+			<select>
+				<option>Select Size</option>
+				<option>XXl</option>
+				<option>Xl</option>
+				<option>m</option>
+				<option>s</option>
+			</select>
+			<input type=" number" value="1">
+			<a href="" class="btn">Add To Cart</a>
+
+			<h3>Products Details <i class="fa fa-indent" ></i></h3>
+			<br>
+			<p>Give your summer wardore a style< upgrade with the HRX Men's Active T-Shirt. Team it with a pair of short for your morning workout or a denims for an evening out with guys./p>
+			</p>
+		</div>
+	</div>
+
+	<div class="small-container">
+		
+		<div class="row">
+			<div class="col-4">
+				<img src="images/product-1.jpg">
+				<h4>Puma Red printed T-shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star" ></i>
+					<i class="fa fa-star" ></i>
+					<i class="fa fa-star" ></i>
+					<i class="fa fa-star-o"></i>
+
+			</div>
+				<p> Rs. 699</p>
+		</div>
+		<div class="col-4">
+				<img src="images/product-2.jpg">
+				<h4>Puma Red printed T-shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star" ></i>
+					<i class="fa fa-star" ></i>
+					<!-- <i class="fa fa-star" ></i> -->
+					<i class="fa fa-star-o"></i>
+			</div>
+				<p> Rs. 499</p>
+		</div>
+		<div class="col-4">
+				<img src="images/product-3.jpg">
+				<h4>Puma Red printed T-shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star" ></i>
+					<i class="fa fa-star" ></i>
+					<i class="fa fa-star" ></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p> Rs. 799</p>
+			</div>
+		</div>
+		
+		
+		
+
+<!--------footer------->`
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>download our App</h3>
+					<p>Download App for android and ios</p>
+
+				</div>
+				<div class="footer-col-2">
+				<img src="images/logo-white.png">
+				<p>jhhh hhuguu</p>		
+				</div>
+				<div class="footer-col-3">
+				<h3>useful links</h3>	
+				<ul>
+					<li>coupon</li>
+					<li>Blog post</li>	
+					<li>return policy</li>
+					<li>Join affilate</li>
+				</ul>
+			</div>
+			<div class="footer-col-4">
+			<h3>Follow us</h3>
+			<ul>
+				<li>Facebook</li>
+				<li>Instagram</li>
+				<li>youtube</li>
+
+			</ul>
+			</div>	
+		</div>
+	
+			
+		<hr>
+		<p class="copyright">Copyright 2020 - ABc</p>
+	</div>
+</div>
+<!---------js for toggle menu---->
+	<script>
+		var MenuItems=docment.getElementById("MenuItems")
+
+		MenuItems.style.maxHeight="0px";
+
+		function menutoggle(){
+			if(MenuItems.style.maxHeight=="0px")
+			{
+				MenuItems.style.maxHeight="200px";
+			}
+		else
+		{
+			MenuItems.style.maxHeight="0px"
+		}
+
+
+		}
+	</script>	
+<!---------js for product gallery---->
+	<script>
+		var productImg= docment.getElementById("ProductImg");
+		var SmallImg= getElementByClassName("smallImg");
+		SmallImg[0].onclick=function()
+		{
+			ProductImg.src= SmallImg[0].src;
+		}
+		SmallImg[1].onclick=function()
+		{
+			ProductImg.src= SmallImg[1].src;
+		}
+		SmallImg[2].onclick=function()
+		{
+			ProductImg.src= SmallImg[2].src;
+		}
+		SmallImg[3].onclick=function()
+		{
+			ProductImg.src= SmallImg[3].src;
+		}
+
+	</script>
+
+</body>
+</html>
